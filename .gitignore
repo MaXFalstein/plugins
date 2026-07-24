@@ -1,0 +1,79 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+.project
+.settings/
+
+# Environment and secrets (keep *.example tracked)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+id_ecdsa
+*.pub
+!*.example
+
+# Git client private identity (host: /docker/trmnl/git/)
+git/gitconfig
+git/config
+git/ssh/
+!git/gitconfig.example
+
+# Runtime / host data mirrors (never commit Omnibus or DB state)
+gitlab/config/
+gitlab/logs/
+gitlab/data/
+**/postgres-data/
+**/valkey-data/
+**/redis-data/
+
+# Plugin working trees
+# Starter scaffold under plugins-prod/workspace is tracked so `serve` has a valid
+# plugin root (.trmnlp.yml). Ignore local build artefacts and extra projects.
+# plugins-prod/workspace/_build/
+# plugins-prod/workspace/**/_build/
+# plugins-dev/workspace/_build/
+# plugins-dev/workspace/**/_build/
+# plugins-dev/*
+# !plugins-dev/.gitkeep
+# **/_build/
+
+# Docker / Compose local noise
+*.log
+docker-compose.override.local.yml
+compose.override.local.yml
+
+
+# Backups and archives
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+*.bak
+*.old
+
+# Local notes / scratch
+*.local
+TODO.local.md
+
